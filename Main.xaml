@@ -98,11 +98,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">170,7</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">270,73 270,103 260,103 260,127</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,68</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">270,75 270,105 260,105 260,127</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Aprendiendo de Variables" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence DisplayName="Aprendiendo de Variables" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_17">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Int32" Name="varContadorPalabras" />
         </Sequence.Variables>
@@ -127,17 +127,17 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[varTextoAEscribir]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[varTextoAEscribir]" />
       </Sequence>
       <FlowStep.Next>
         <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">160,127</av:Point>
-              <av:Size x:Key="ShapeSize">200,66</av:Size>
+              <av:Size x:Key="ShapeSize">200,68</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Programacion" sap:VirtualizedContainerService.HintSize="376,383" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Programacion" sap:VirtualizedContainerService.HintSize="376,385" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="varArrayPalabrasClaves" />
               <Variable x:TypeArguments="x:Int32" Name="varCantidadArchivos" />
@@ -163,7 +163,7 @@
                 <InArgument x:TypeArguments="x:Int32">[Directory.GetFiles("C:\Users\julia\Documents\UiPath\Curso_RPA_Platzi\Archivos","*").Count()]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Número de colores: &quot;+varArrayPalabrasClaves.Length.ToString() + &#xD;&#xA;&quot; Número de archivos: &quot;+varCantidadArchivos.ToString()]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Número de colores:   &quot;+varArrayPalabrasClaves.Length.ToString() + &#xD;&#xA;&quot; Número de archivos: &quot;+varCantidadArchivos.ToString()]" />
           </Sequence>
         </FlowStep>
       </FlowStep.Next>
